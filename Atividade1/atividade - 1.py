@@ -6,6 +6,7 @@
 # em que o dono forneça a quantidade de sanduíches a fazer,
 # e a máquina informe as quantidades (em quilos) de queijo,
 # presunto e carne necessários para compra.
+
 print("Seja Bem-Vindo!")
 print(100*"-")
 s = int(input("Insira a quantiedade de sanduiches que devem ser feitos: "))
