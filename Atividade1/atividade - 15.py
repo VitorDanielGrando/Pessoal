@@ -2,14 +2,15 @@
 # Faça um algoritmo que receba o salário fixo de um funcionário e o valor de 
 # suas vendas, calcule e mostre a comissão e o salário final do funcionário.
 
-print(100*"-")
-salario = float(input("Insira seu salário fixo: "))
-vendas = int(input("Insira o total de vendas realizadas: "))
+salario_fixo = float(input("Digite o salário fixo do funcionário: "))
+valor_vendas = float(input("Digite o valor total das vendas: "))
 
-porcentagem = (4 / 100) * salario
-comissao = porcentagem * vendas
-vt = salario + comissao
-print("-"*100)
-print(f"O valor total com as comissões foi de {vt }")
-print(f"O valor da comissão foi de: {comissao}")
-print("-"*100)
+# Calculando a comissão
+comissao = valor_vendas * 0.04  # Comissão de 4%
+
+# Calculando o salário final
+salario_final = salario_fixo + comissao
+
+# Mostrando o resultado
+print("A comissão do funcionário é de: R$", comissao)
+print("O salário final do funcionário é de: R$", salario_final)
