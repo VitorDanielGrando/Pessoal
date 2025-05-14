@@ -6,3 +6,8 @@ import os
 
 template_dir = os.path.abspath(os.path.dirname(__file__))
 app = flask(__name__, template_folder=template_dir)
+
+# Direcionamento para base de index HTML
+@app.route("/")
+def home ():
+    return render_template("index.html")
