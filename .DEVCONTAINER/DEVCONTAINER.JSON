@@ -1,0 +1,13 @@
+
+{
+    "name": "HTML-CSS-Python",
+    "image": "mcr.microsoft.com/devcontainers/python:3.11",
+    "postCreateCommand": "pip install flask",
+    "forwardPorts": [5000],
+    "customizations": {
+      "vscode": {
+        "extensions": ["ms-python.python"]
+      }
+    }
+  }
+
